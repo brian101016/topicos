@@ -25,7 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       lblh.classList.remove("hidden");
     }
 
-    // Volver a correr calc
+    // Reiniciar inputs
+    b.value = "";
+    w.value = "";
+    h.value = "";
     calc();
   };
 
