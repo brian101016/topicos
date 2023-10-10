@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <style>
+      .hidden {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Calculadora para:
+      <select id="type">
+        <option selected>Cuadrado</option>
+        <option>Rectángulo</option>
+        <option>Triángulo</option>
+      </select>
+    </h1>
+
+    <div>
+      <label id="lblb">Medida de la base: <input type="number" id="b" /></label>
+
+      <br />
+      <label id="lblw"
+        >Medida de la anchura: <input type="number" id="w"
+      /></label>
+
+      <br />
+      <label id="lblh"
+        >Medida de la altura: <input type="number" id="h"
+      /></label>
+    </div>
+
+    <h3>Resultado: <span id="res">...</span></h3>
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>
