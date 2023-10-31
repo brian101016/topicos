@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 03-10</title>
+  </head>
+  <body>
+    Instrucciones 1.- Filter, crear arreglo de 5, de numeros, filtrar numeros
+    mayor o igual a 5. imprimir con foreach el nuevo arreglo
+
+    <script>
+      console.log(
+        "EJERCICIO 1 ########################################################"
+      );
+      const arr = [0, 2, 4, 5, 6, 8, 10, 12, 14];
+      const l = arr.filter((v) => v >= 5);
+      l.forEach((n) => console.log("Numero aceptado: " + n));
+
+      console.log(
+        "EJERCICIO 2 ########################################################"
+      );
+      const frutas = ["naranja", "platano", "manzana", "fresa", "kiwi"];
+      const new2 = frutas.slice(2, 4);
+      console.log(new2);
+
+      console.log(
+        "EJERCICIO 3 ########################################################"
+      );
+      const arr3 = [2, 51, 6, 7, 4, 2, 5, 8, 3, 4, 72];
+      arr3.map((n) => {
+        n + 10;
+      });
+
+      console.log(
+        "EJERCICIO 4 ########################################################"
+      );
+      const arr4 = [];
+
+      console.log(
+        "EJERCICIO 5 ########################################################"
+      );
+      const arr5 = [];
+    </script>
+  </body>
+</html>

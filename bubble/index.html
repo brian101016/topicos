@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Sort</title>
+  </head>
+  <body>
+    <script>
+      const asd = [7, 2, 6, 8, 4, 1, 6];
+
+      function bubbleV2(arr) {
+        let flag = arr.length <= 1;
+        let mayor = arr[0];
+
+        while (!flag) {
+          mayor = arr[0];
+          flag = true;
+
+          for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > mayor) {
+              flag = false;
+              const t = mayor;
+              mayor = arr[i];
+              arr[i] = t;
+            }
+
+            console.log(i, arr[i]);
+          }
+
+          flag = true; // PREVENT
+        }
+        console.log(flag, arr);
+      }
+
+      function bubbleV1(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = i; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+              let act = arr[i];
+              arr[i] = arr[j];
+              arr[j] = act;
+            }
+            console.log(arr);
+          }
+        }
+      }
+
+      // Diferencias entre un statement y expresion; y 5 metodos de arreglos
+    </script>
+  </body>
+</html>
