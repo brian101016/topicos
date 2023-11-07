@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const sorted = historial.sort(
-      (a, b) => a.base_experience > b.base_experience
+    const sorted = historial.sort((a, b) =>
+      a.base_experience > b.base_experience ? 1 : -1
     );
 
     for (const pokemon of sorted) {
