@@ -131,6 +131,11 @@ button:active {
   transform: translateY(2px);
 }
 
+button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .alerta {
   position: absolute;
   top: 0%;
@@ -157,4 +162,15 @@ button:active {
 .hide {
   visibility: hidden !important;
   display: none !important;
+}
+
+#show-water-type * {
+  display: none;
+  visibility: none;
+}
+
+#show-water-type.yes > img,
+#show-water-type.no > h1 {
+  display: block !important;
+  visibility: visible !important;
 }
