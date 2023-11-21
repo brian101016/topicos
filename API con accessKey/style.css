@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0.5rem 0.75rem;
+}
+
+h1,
+.controls {
+  margin: 1rem;
+  text-align: center;
+}
